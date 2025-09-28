@@ -61,8 +61,8 @@ export default function Dropdown({
         <button
           type="button"
           className={`${
-            disabled ? 'cursor-default bg-neutral-100' : 'cursor-pointer bg-white'
-          } relative w-full rounded border border-neutral-300 py-2 pl-3 pr-10 text-left focus:border-neutral-500 focus:outline-none focus:ring-1 focus:ring-neutral-500 sm:text-sm`}
+            disabled ? 'cursor-default bg-neutral-100' : 'cursor-pointer bg-neutral-50/50 hover:bg-white'
+          } relative w-full rounded-xl border-2 border-neutral-200 py-3 pl-4 pr-10 text-left focus:border-primary-400 focus:outline-none focus:ring-4 focus:ring-primary-100 transition-all duration-200 sm:text-sm font-medium`}
           aria-haspopup="listbox"
           aria-expanded="true"
           aria-labelledby="listbox-label"
@@ -111,7 +111,7 @@ export default function Dropdown({
               transition={{duration: 0.2, ease: 'easeInOut'}}
               className={`${
                 inModal ? 'fixed w-64' : 'absolute w-full'
-              } z-50 mt-1 max-h-72 rounded-md border border-black border-opacity-10 bg-white text-base shadow-lg focus:outline-none sm:text-sm`}
+              } z-50 mt-2 max-h-72 rounded-xl border border-neutral-200 bg-white text-base shadow-card focus:outline-none sm:text-sm`}
               tabIndex={-1}
               role="listbox"
             >
@@ -149,7 +149,7 @@ export default function Dropdown({
                       return (
                         <li
                           key={`x-${index}`}
-                          className="relative flex cursor-default select-none items-center rounded-md py-2.5 pl-2.5 text-neutral-800 transition ease-in-out hover:bg-neutral-100"
+                          className="relative flex cursor-pointer select-none items-center rounded-lg py-3 pl-3 text-neutral-800 transition-all duration-150 ease-in-out hover:bg-primary-50 hover:text-primary-700 font-medium"
                           role="option"
                           onClick={() => {
                             onChange(value.value);

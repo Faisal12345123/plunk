@@ -28,29 +28,29 @@ export default function Index() {
 		<>
 			<Dashboard>
 				<>
-					<div className="divide-y divide-neutral-200 overflow-hidden rounded border border-neutral-200 bg-neutral-200 lg:grid lg:grid-cols-3 lg:gap-px lg:divide-y-0">
-						<div className="group relative rounded-tl rounded-tr bg-white p-6 transition focus-within:ring-2 focus-within:ring-inset focus-within:ring-neutral-800 lg:rounded-tr-none">
+					<div className="overflow-hidden rounded-2xl bg-gradient-to-r from-neutral-100/50 to-neutral-200/30 p-1 lg:grid lg:grid-cols-3 lg:gap-1">
+						<div className="group relative rounded-2xl bg-white p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:scale-105 lg:rounded-2xl border border-neutral-100">
 							{activeProject.verified ? (
 								<>
 									<div>
-										<span className="inline-flex rounded bg-neutral-100 p-3 text-neutral-800 ring-4 ring-white">
-											<Send size={20} />
+										<span className="inline-flex rounded-xl bg-gradient-primary p-4 text-white shadow-lg animate-float">
+											<Send size={24} />
 										</span>
 									</div>
-									<div className="mt-8">
-										<h3 className="text-lg font-medium">
+									<div className="mt-6">
+										<h3 className="text-xl font-bold text-neutral-800">
 											<Link href={"/campaigns/new"} className="focus:outline-none">
 												<span className="absolute inset-0" aria-hidden="true" />
 												Send a campaign
 											</Link>
 										</h3>
-										<p className="mt-2 text-sm text-neutral-500">Send a broadcast to your contacts</p>
+										<p className="mt-3 text-sm text-neutral-600 font-medium">Send a broadcast to your contacts 📢</p>
 									</div>
 								</>
 							) : (
 								<>
 									<div>
-										<span className="inline-flex rounded bg-neutral-100 p-3 text-neutral-800 ring-4 ring-white">
+										<span className="inline-flex rounded-xl bg-gradient-accent p-4 text-white shadow-lg animate-pulse-slow">
 											<svg
 												className="h-6 w-6"
 												xmlns="http://www.w3.org/2000/svg"
@@ -85,15 +85,15 @@ export default function Index() {
 											</svg>
 										</span>
 									</div>
-									<div className="mt-8">
+									<div className="mt-6">
 										<Badge type={"danger"}>Important</Badge>
-										<h3 className="mt-3 text-lg font-medium">
+										<h3 className="mt-3 text-xl font-bold text-neutral-800">
 											<Link href={"/settings/identity"} className="focus:outline-none">
 												<span className="absolute inset-0" aria-hidden="true" />
 												Verify your domain
 											</Link>
 										</h3>
-										<p className="mt-2 text-sm text-neutral-500">Verify your domain before you send emails</p>
+										<p className="mt-3 text-sm text-neutral-600 font-medium">Verify your domain before you send emails 🌐</p>
 									</div>
 								</>
 							)}
@@ -108,20 +108,20 @@ export default function Index() {
 							</span>
 						</div>
 
-						<div className="group relative bg-white p-6 transition focus-within:ring-2 focus-within:ring-inset focus-within:ring-neutral-800 lg:rounded-tr">
+						<div className="group relative rounded-2xl bg-white p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:scale-105 border border-neutral-100">
 							<div>
-								<span className="inline-flex rounded bg-neutral-100 p-3 text-neutral-800 ring-4 ring-white">
-									<LineChart size={20} />
+								<span className="inline-flex rounded-xl bg-gradient-secondary p-4 text-white shadow-lg">
+									<LineChart size={24} />
 								</span>
 							</div>
-							<div className="mt-2 flex h-4/6 flex-col justify-end">
-								<h3 className="text-lg font-medium">
+							<div className="mt-6 flex flex-col justify-end">
+								<h3 className="text-xl font-bold text-neutral-800">
 									<Link href={"/analytics"} passHref className="focus:outline-none">
 										<span className="absolute inset-0" aria-hidden="true" />
 										Analytics
 									</Link>
 								</h3>
-								<p className="mt-2 text-sm text-neutral-500">Discover insights about your emails</p>
+								<p className="mt-3 text-sm text-neutral-600 font-medium">Discover insights about your emails 📊</p>
 							</div>
 							<span
 								className="pointer-events-none absolute right-6 top-6 text-neutral-300 transition group-hover:text-neutral-400"
@@ -133,20 +133,20 @@ export default function Index() {
 							</span>
 						</div>
 
-						<div className="group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-neutral-800 lg:rounded-bl">
+						<div className="group relative rounded-2xl bg-white p-8 shadow-card hover:shadow-card-hover transition-all duration-300 hover:scale-105 border border-neutral-100">
 							<div>
-								<span className="inline-flex rounded bg-neutral-100 p-3 text-neutral-800 ring-4 ring-white">
-									<Book size={20} />
+								<span className="inline-flex rounded-xl bg-gradient-success p-4 text-white shadow-lg">
+									<Book size={24} />
 								</span>
 							</div>
-							<div className="mt-2 flex h-4/6 flex-col justify-end">
-								<h3 className="text-lg font-medium">
+							<div className="mt-6 flex flex-col justify-end">
+								<h3 className="text-xl font-bold text-neutral-800">
 									<a href={"https://docs.useplunk.com"} target={"_blank"} className="focus:outline-none" rel="noreferrer">
 										<span className="absolute inset-0" aria-hidden="true" />
 										Documentation
 									</a>
 								</h3>
-								<p className="mt-2 text-sm text-neutral-500">Discover how to use Plunk</p>
+								<p className="mt-3 text-sm text-neutral-600 font-medium">Discover how to use Plunk 📚</p>
 							</div>
 							<span
 								className="pointer-events-none absolute right-6 top-6 text-neutral-300 transition group-hover:text-neutral-400"
@@ -223,13 +223,13 @@ export default function Index() {
 
 									<button
 										className={
-											"mx-auto mt-5 block rounded border border-neutral-200 px-5 py-2.5 text-sm font-medium text-neutral-800 transition ease-in-out hover:bg-neutral-50"
+											"mx-auto mt-6 block rounded-xl border-2 border-primary-200 bg-primary-50 px-6 py-3 text-sm font-semibold text-primary-700 transition-all duration-200 ease-in-out hover:bg-primary-100 hover:border-primary-300 hover:scale-105 active:scale-95"
 										}
 										onClick={() => {
 											setFeedPage(feedPage + 1);
 										}}
 									>
-										Load older
+										Load older 📄
 									</button>
 								</>
 							)

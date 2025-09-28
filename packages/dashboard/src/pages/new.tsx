@@ -175,8 +175,8 @@ export default function Index() {
 										type="submit"
 										disabled={!isValid || submitted}
 										className={` ${
-											isValid ? "bg-neutral-800 text-white" : "bg-neutral-200 text-white"
-										} mt-5 flex w-full items-center justify-center rounded py-2.5 text-sm font-medium transition`}
+											isValid ? "bg-gradient-primary text-white shadow-lg" : "bg-neutral-200 text-neutral-400"
+										} mt-6 flex w-full items-center justify-center rounded-xl py-4 text-sm font-semibold transition-all duration-200 hover:shadow-xl`}
 									>
 										{submitted ? (
 											<svg

@@ -26,15 +26,15 @@ export interface InputProps {
 export default function Input(props: InputProps) {
   return (
     <div className={props.className}>
-      <label className="block text-sm font-medium text-neutral-700">{props.label}</label>
-      <div className="mt-1">
+      <label className="block text-sm font-semibold text-neutral-700 mb-2">{props.label}</label>
+      <div className="relative">
         <input
           autoComplete={'off'}
           type={props.type}
           min={props.type === 'number' ? props.min : undefined}
           max={props.type === 'number' ? props.max : undefined}
           className={
-            'block w-full rounded border-neutral-300 transition ease-in-out focus:border-neutral-800 focus:ring-neutral-800 sm:text-sm'
+            'block w-full px-4 py-3 rounded-xl border-2 border-neutral-200 bg-neutral-50/50 transition-all duration-200 ease-in-out focus:border-primary-400 focus:ring-4 focus:ring-primary-100 focus:bg-white hover:border-neutral-300 sm:text-sm font-medium placeholder-neutral-400'
           }
           placeholder={props.placeholder}
           {...props.register}

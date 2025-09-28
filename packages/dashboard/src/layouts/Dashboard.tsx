@@ -23,7 +23,7 @@ export const Dashboard = (props: {children: React.ReactNode}) => {
 
   return (
     <>
-      <div className="flex h-screen overflow-hidden bg-neutral-50">
+      <div className="flex h-screen overflow-hidden bg-gradient-to-br from-neutral-50 via-primary-50/30 to-secondary-50/20">
         <Sidebar
           mobileOpen={mobileSidebarOpen}
           onSidebarVisibilityChange={() => setMobileSidebarOpen(!mobileSidebarOpen)}
