@@ -287,7 +287,7 @@ export default function Index() {
 											);
 										}}
 										className={
-											"mt-6 flex items-center justify-center gap-x-1 rounded border border-neutral-300 bg-white px-8 py-1 text-center text-sm font-medium text-neutral-800 transition ease-in-out hover:bg-neutral-100"
+											"mt-6 flex items-center justify-center gap-x-2 rounded-xl border-2 border-primary-200 bg-primary-50 px-6 py-3 text-center text-sm font-semibold text-primary-700 transition-all duration-200 ease-in-out hover:bg-primary-100 hover:border-primary-300 hover:scale-105 active:scale-95"
 										}
 									>
 										{watch("recipients").length === 0 ? <Users2 size={18} /> : <XIcon size={18} />}
@@ -299,7 +299,7 @@ export default function Index() {
 											setSelector(!advancedSelector);
 										}}
 										className={
-											"mt-6 flex items-center justify-center gap-x-1 rounded border border-neutral-300 bg-white px-8 py-1 text-center text-sm font-medium text-neutral-800 transition ease-in-out hover:bg-neutral-100"
+											"mt-6 flex items-center justify-center gap-x-2 rounded-xl border-2 border-secondary-200 bg-secondary-50 px-6 py-3 text-center text-sm font-semibold text-secondary-700 transition-all duration-200 ease-in-out hover:bg-secondary-100 hover:border-secondary-300 hover:scale-105 active:scale-95"
 										}
 									>
 										{advancedSelector ? <XIcon size={18} /> : <Search size={18} />}
@@ -315,7 +315,7 @@ export default function Index() {
 											exit={{ opacity: 0, height: 0 }}
 											transition={{ duration: 0.2 }}
 											className={
-												"relative z-20 grid gap-6 rounded border border-neutral-300 px-6 py-6 sm:col-span-6 sm:grid-cols-4"
+												"relative z-20 grid gap-6 rounded-2xl border-2 border-neutral-200 bg-neutral-50/50 px-8 py-8 sm:col-span-6 sm:grid-cols-4 shadow-card"
 											}
 										>
 											<div className={"sm:col-span-2"}>
@@ -536,7 +536,7 @@ export default function Index() {
 													whileHover={{ scale: 1.05 }}
 													whileTap={{ scale: 0.9 }}
 													className={
-														"ml-auto flex items-center justify-center gap-x-0.5 rounded bg-neutral-800 px-8 py-2 text-center text-sm font-medium text-white"
+														"ml-auto flex items-center justify-center gap-x-2 rounded-xl bg-gradient-primary px-8 py-3 text-center text-sm font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200"
 													}
 												>
 													<svg width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -626,7 +626,7 @@ export default function Index() {
 									return router.push("/campaigns");
 								}}
 								className={
-									"flex w-fit justify-center rounded border border-neutral-300 bg-white px-6 py-2 text-base font-medium text-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-800 focus:ring-offset-2 sm:mt-0 sm:w-auto sm:text-sm"
+									"flex w-fit justify-center rounded-xl border-2 border-neutral-300 bg-white px-8 py-3 text-base font-semibold text-neutral-700 focus:outline-none focus:ring-4 focus:ring-neutral-200 hover:bg-neutral-50 hover:border-neutral-400 transition-all duration-200 sm:mt-0 sm:w-auto sm:text-sm"
 								}
 							>
 								Cancel
@@ -636,7 +636,7 @@ export default function Index() {
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.9 }}
 								className={
-									"flex items-center gap-x-0.5 rounded bg-neutral-800 px-8 py-2 text-center text-sm font-medium text-white"
+									"flex items-center gap-x-2 rounded-xl bg-gradient-primary px-8 py-3 text-center text-sm font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200"
 								}
 							>
 								<svg width="24" height="24" fill="none" viewBox="0 0 24 24">

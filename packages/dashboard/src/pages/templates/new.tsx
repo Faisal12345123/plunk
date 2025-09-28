@@ -204,7 +204,7 @@ export default function Index() {
 							</AnimatePresence>
 						</div>
 
-						<div className={"flex justify-end gap-3 sm:col-span-6"}>
+						<div className={"flex justify-end gap-4 sm:col-span-6"}>
 							<motion.button
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.9 }}
@@ -213,7 +213,7 @@ export default function Index() {
 									return router.push("/templates");
 								}}
 								className={
-									"flex w-fit justify-center rounded border border-neutral-300 bg-white px-6 py-2 text-base font-medium text-neutral-700 focus:outline-none focus:ring-2 focus:ring-neutral-800 focus:ring-offset-2 sm:mt-0 sm:w-auto sm:text-sm"
+									"flex w-fit justify-center rounded-xl border-2 border-neutral-300 bg-white px-8 py-3 text-base font-semibold text-neutral-700 focus:outline-none focus:ring-4 focus:ring-neutral-200 hover:bg-neutral-50 hover:border-neutral-400 transition-all duration-200 sm:mt-0 sm:w-auto sm:text-sm"
 								}
 							>
 								Cancel
@@ -223,7 +223,7 @@ export default function Index() {
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.9 }}
 								className={
-									"flex items-center gap-x-0.5 rounded bg-neutral-800 px-8 py-2 text-center text-sm font-medium text-white"
+									"flex items-center gap-x-2 rounded-xl bg-gradient-secondary px-8 py-3 text-center text-sm font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200"
 								}
 							>
 								<svg width="24" height="24" fill="none" viewBox="0 0 24 24">

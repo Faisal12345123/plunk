@@ -51,7 +51,7 @@ export default function Index() {
 								<motion.button
 									whileHover={{ scale: 1.05 }}
 									whileTap={{ scale: 0.9 }}
-									className={"mt-9 rounded-md bg-neutral-800 px-24 py-3 text-sm font-medium text-white"}
+									className={"mt-9 rounded-xl bg-gradient-success px-24 py-4 text-sm font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200"}
 									onClick={async () => {
 										await router.push("/");
 									}}
@@ -172,7 +172,7 @@ response = https.request(request)`,
 								<motion.button
 									whileHover={{ scale: 1.05 }}
 									whileTap={{ scale: 0.9 }}
-									className={"rounded-md bg-neutral-800 px-24 py-3 text-sm font-medium text-white"}
+									className={"rounded-xl bg-gradient-primary px-24 py-4 text-sm font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-200"}
 									onClick={() => {
 										toast.promise(
 											network.mock<boolean, typeof EventSchemas.send>(project.secret, "POST", "/v1/send", {

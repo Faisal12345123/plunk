@@ -39,12 +39,12 @@ export default function Card({title, description, children, className, actions, 
   }, [ref]);
 
   return (
-    <div className={`rounded border border-neutral-200 bg-white px-8 py-4 ${className}`}>
+    <div className={`rounded-2xl border border-neutral-200/50 bg-white px-8 py-6 shadow-card hover:shadow-card-hover transition-all duration-300 ${className}`}>
       <div className={'flex items-center'}>
         <div className={'flex w-full flex-col gap-3 md:flex-row md:items-center'}>
           <div>
-            <h2 className={'text-xl font-semibold leading-tight text-neutral-800'}>{title}</h2>
-            <p className={'text-sm text-neutral-500'}>{description}</p>
+            <h2 className={'text-xl font-bold leading-tight text-neutral-800 bg-gradient-primary bg-clip-text text-transparent'}>{title}</h2>
+            <p className={'text-sm text-neutral-600 mt-1'}>{description}</p>
           </div>
           <div className={'flex flex-1 gap-x-2.5 md:justify-end'}>{actions}</div>
         </div>
@@ -95,7 +95,7 @@ export default function Card({title, description, children, className, actions, 
         )}
       </div>
 
-      <div className={'py-4'}>{children}</div>
+      <div className={'py-6'}>{children}</div>
     </div>
   );
 }
